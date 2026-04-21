@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Palette — change these CSS variables (or the Tailwind mapping in
+  tailwind.config.ts) to re-theme the entire site in one place.
+
+  Source colors (approx HSL):
+    brand      #3b5724  → 95 41% 24%
+    secondary  #3D405B  → 233 21% 30%
+    cream      #F2E9DC  → 36 53% 91%
+    accent     #F85E00  → 22 100% 49%
+    deep-red   #90323D  → 352 48% 38%
+*/
+
+@layer base {
+  :root {
+    /* Raw palette */
+    --brand: 95 41% 24%;
+    --brand-foreground: 36 53% 91%;
+    --secondary: 233 21% 30%;
+    --secondary-foreground: 36 53% 91%;
+    --cream: 36 53% 91%;
+    --accent: 22 100% 49%;
+    --accent-foreground: 0 0% 100%;
+    --deep-red: 352 48% 38%;
+
+    /* Semantic (LIGHT mode) */
+    --background: 36 53% 96%;
+    --foreground: 233 21% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 233 21% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 233 21% 12%;
+    --primary: 95 41% 24%;
+    --primary-foreground: 36 53% 96%;
+    --muted: 36 30% 88%;
+    --muted-foreground: 233 15% 35%;
+    --destructive: 352 48% 38%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 36 20% 80%;
+    --input: 36 20% 80%;
+    --ring: 95 41% 24%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Semantic (DARK mode) — green-forward */
+    --background: 95 25% 7%;
+    --foreground: 36 53% 91%;
+    --card: 95 20% 10%;
+    --card-foreground: 36 53% 91%;
+    --popover: 95 25% 8%;
+    --popover-foreground: 36 53% 91%;
+    --primary: 95 41% 34%;
+    --primary-foreground: 36 53% 96%;
+    --muted: 95 15% 14%;
+    --muted-foreground: 36 20% 70%;
+    --destructive: 352 48% 45%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 95 15% 18%;
+    --input: 95 15% 18%;
+    --ring: 22 100% 49%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  ::selection {
+    background: hsl(var(--accent) / 0.25);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.4) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.4) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  .bg-radial-fade {
+    background: radial-gradient(
+      ellipse at top,
+      hsl(var(--brand) / 0.25),
+      transparent 60%
+    );
+  }
+}
+
+/* Shiki code blocks */
+pre {
+  @apply overflow-x-auto rounded-lg border border-border bg-muted/50 p-4 text-sm;
+}
+pre code {
+  @apply bg-transparent p-0;
+}
+code {
+  @apply rounded bg-muted px-1.5 py-0.5 font-mono text-[0.9em];
+}
+[data-rehype-pretty-code-figure] pre {
+  @apply p-0;
+}
+[data-rehype-pretty-code-figure] code {
+  @apply block bg-transparent p-4;
+}

@@ -1,0 +1,32 @@
+---
+title: "Hello, world (again)"
+date: "2024-10-01"
+summary: "A quick note on why I rebuilt my portfolio — and what I want to write about next."
+tags: ["meta", "web"]
+---
+
+# Hello, world (again)
+
+Every few years I rebuild this thing from scratch. This time it's Next.js 14 with
+App Router, React Three Fiber for the hero, Framer Motion for scroll scenes, and GSAP
+for timeline work.
+
+## Why rebuild?
+
+Because the stack changed and I want to actually _use_ the pieces I recommend to people:
+
+- **Server components** for content routes.
+- **R3F + drei** for the hero — keeps the 3D code declarative.
+- **shadcn/ui** primitives I can own and tweak.
+
+```ts
+// this page's own Typewriter, distilled
+export function Typewriter({ phrases }: { phrases: string[] }) {
+  // ... see src/components/hero/Typewriter.tsx
+}
+```
+
+## What I'll write about
+
+Mostly notes to future-me: performance traps, fun little demos, occasional hot takes.
+If you see something broken, [send me a message](/contact).
