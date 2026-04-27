@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Send me a message — for work, collaborations, or a friendly hello."
+  description: "Send me a message about work, collaborations, or a friendly hello."
 };
 
 export default function ContactPage() {
@@ -19,11 +19,12 @@ export default function ContactPage() {
             Contact
           </p>
           <h1 className="mt-3 text-4xl font-bold tracking-tight md:text-5xl">
-            Let's talk.
+            Say hi.
           </h1>
           <p className="mt-5 text-lg text-muted-foreground">
-            Got a role, project, or just a question? Drop a note and I'll reply within
-            a couple of business days. I read everything.
+            Looking to hire a new-grad engineer, working on something I might like, or
+            just want to argue about Elden Ring builds? Drop a note. I reply to
+            everything.
           </p>
 
           <div className="mt-10 space-y-3 text-sm">

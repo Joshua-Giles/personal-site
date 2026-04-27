@@ -1,58 +1,47 @@
 import type { Project } from "@/types/project";
 
-/**
- * Placeholder projects — replace with real content.
- * Images use picsum.photos for now; drop real images into
- * /public/images/projects/ and update the `image` fields.
- */
 export const projects: Project[] = [
   {
-    slug: "aurora-realtime-chat",
-    title: "Aurora — Realtime Chat Platform",
-    summary: "Low-latency group chat with presence, reactions, and E2E-encrypted DMs.",
+    slug: "juntos-attendance",
+    title: "Juntos Attendance Platform",
+    summary:
+      "Full-stack web app replacing pen-and-paper attendance for a 20+ school NC State non-profit.",
     description:
-      "A production-grade realtime chat app built on WebSockets with a Rust relay server and a Next.js client. Supports typing indicators, presence, reactions, edits, threaded replies, and end-to-end encrypted direct messages via libsodium.",
-    tech: ["Next.js", "TypeScript", "Rust", "WebSockets", "Postgres", "Redis"],
-    image: "https://picsum.photos/seed/aurora/1200/800",
-    repo: "https://github.com/Joshua-Giles/aurora",
-    demo: "https://example.com/aurora",
+      "My senior design capstone (6-person team) for Juntos, an NC State non-profit that runs weekly educational meetings across 20+ North Carolina schools for students from 6th grade through the first two years of college. Before this, program coordinators tracked attendance on paper and retyped it into Excel after every event. We built the replacement end-to-end: role-based auth (Admin, Super Admin, Program Coordinator), the full event lifecycle (create, start, sign-in/register, complete), digital signature capture via signature-pad for audit requirements, guest-to-student relationship tracking, and one-click .xlsx export. Containerized with Docker (frontend, backend, db, Nginx reverse proxy) and covered by JUnit + Playwright tests. Deploying to NC State OIT-hosted infrastructure with a university domain, rare for a capstone project.",
+    tech: [
+      "React",
+      "Java",
+      "Spring Boot",
+      "PostgreSQL",
+      "Docker",
+      "Nginx",
+      "JUnit",
+      "Playwright"
+    ],
+    // Source & live app are private (Juntos members only).
+    // TODO: swap in a real screenshot if/when one becomes shareable.
     featured: true,
-    year: 2024
+    year: 2026
   },
   {
-    slug: "prisma-portfolio-engine",
-    title: "Prisma — 3D Portfolio Engine",
-    summary: "Reusable R3F components for portfolio heroes, timelines, and scroll scenes.",
+    slug: "lexisnexis-internship",
+    title: "LexisNexis Software Engineering Intern",
+    summary:
+      "11-week full-stack internship at LexisNexis Legal & Professional (Summer 2025, Raleigh).",
     description:
-      "Open-source toolkit I extracted from building portfolio sites. Includes composable floating-shape scenes, a GSAP-driven ScrollTrigger hook, and a typewriter primitive. Ships as a tree-shakeable ESM package.",
-    tech: ["React", "Three.js", "R3F", "GSAP", "TypeScript", "Vite"],
-    image: "https://picsum.photos/seed/prisma/1200/800",
-    repo: "https://github.com/Joshua-Giles/prisma",
+      "11-week internship contributing to both backend and frontend development on a large-scale enterprise application. Implemented new features, streamlined API usage, and improved efficiency by refining data handling and instrumentation. Investigated and resolved complex bugs, including issues in third-party integrations that required deep debugging and close collaboration with my team. Learned agile practices firsthand: participated in code reviews, story pointing, and iterated on solutions to deliver production-ready features. Got fluent with GitHub Copilot to maximize efficiency and free up time for higher-level problem solving. On day one, proactively built a cross-team intern communication channel that's still active.",
+    tech: [
+      ".NET",
+      "C#",
+      "TypeScript",
+      "AngularJS",
+      "SQL",
+      "Azure DevOps",
+      "Postman",
+      "Swagger"
+    ],
     featured: true,
-    year: 2024
-  },
-  {
-    slug: "tome-cli-devtool",
-    title: "Tome — CLI Devtool",
-    summary: "Project scaffolder with plugin system and zero-config TS templates.",
-    description:
-      "A fast, ergonomic CLI for bootstrapping TypeScript projects. Written in Go with a plugin API powered by WASM, letting teams ship private generators without forking the core. Distributed via Homebrew, Scoop, and apt.",
-    tech: ["Go", "WASM", "TypeScript", "Cobra", "Bun"],
-    image: "https://picsum.photos/seed/tome/1200/800",
-    repo: "https://github.com/Joshua-Giles/tome",
-    featured: true,
-    year: 2023
-  },
-  {
-    slug: "sifter-ml-classifier",
-    title: "Sifter — Recipe Classifier",
-    summary: "ML model + web UI that tags recipes by cuisine, diet, and technique.",
-    description:
-      "Fine-tuned a DistilBERT model on a custom 40k-recipe corpus. Serves predictions behind a FastAPI gateway with a Next.js UI. Includes an active-learning loop where user corrections feed back into a labeling dashboard.",
-    tech: ["Python", "PyTorch", "FastAPI", "Next.js", "Docker"],
-    image: "https://picsum.photos/seed/sifter/1200/800",
-    repo: "https://github.com/Joshua-Giles/sifter",
-    year: 2023
+    year: 2025
   }
 ];
 

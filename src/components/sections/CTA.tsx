@@ -10,19 +10,20 @@ export function CTA() {
         <div className="relative overflow-hidden rounded-2xl border border-border/60 bg-gradient-to-br from-brand/30 via-secondary/20 to-background p-10 md:p-16">
           <div className="absolute inset-0 -z-10 bg-grid opacity-10" aria-hidden />
           <p className="font-mono text-sm uppercase tracking-widest text-accent">
-            04 — Let's build
+            Let's talk
           </p>
           <h2 className="mt-3 max-w-2xl text-balance text-3xl font-bold tracking-tight md:text-5xl">
-            Got an idea worth making real?
+            Hiring a new-grad engineer? Or just want to say hi?
           </h2>
           <p className="mt-4 max-w-xl text-lg text-muted-foreground">
-            I'm open to interesting problems — full-time, contract, or collaborations.
-            The best projects usually start as a quick conversation.
+            I'm graduating in May 2026 and actively looking for full-time roles. Based
+            in Raleigh, open to Charlotte, and willing to hear you out on anywhere
+            interesting.
           </p>
           <div className="mt-8">
             <Button asChild size="lg">
               <Link href="/contact">
-                Start a conversation <ArrowRight className="ml-1" />
+                Drop a note <ArrowRight className="ml-1" />
               </Link>
             </Button>
           </div>

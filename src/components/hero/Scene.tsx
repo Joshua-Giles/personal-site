@@ -22,14 +22,18 @@ interface ShapeDef {
   wireframe?: boolean;
 }
 
+// Positions biased slightly left/back so they don't fight the polaroid on the right.
 const SHAPES: ShapeDef[] = [
-  { position: [-3.2, 1.2, -1], kind: "icosahedron", color: PALETTE.brand, scale: 1.1, speed: 1.1 },
-  { position: [3, -0.8, -2], kind: "torusKnot", color: PALETTE.accent, scale: 0.9, speed: 1.4 },
-  { position: [0, 2, -3], kind: "octahedron", color: PALETTE.cream, scale: 0.8, speed: 0.9, wireframe: true },
-  { position: [-2, -1.6, -2.5], kind: "torus", color: PALETTE.deepRed, scale: 0.85, speed: 1.2 },
-  { position: [2.2, 1.8, -1.5], kind: "dodecahedron", color: PALETTE.secondary, scale: 0.75, speed: 1.3 },
-  { position: [-0.2, -2, -1], kind: "icosahedron", color: PALETTE.accent, scale: 0.55, speed: 1.6, wireframe: true },
-  { position: [3.5, 2.5, -4], kind: "octahedron", color: PALETTE.brand, scale: 1.3, speed: 0.8 }
+  // Low-poly mountain — nod to Boone, camping, and South African roots.
+  { position: [-3.4, 1.4, -1.5], kind: "mountain", color: PALETTE.brand, scale: 1.3, speed: 0.9 },
+  // Film reel / lens — film photography.
+  { position: [-1.8, 2.1, -2.5], kind: "filmReel", color: PALETTE.cream, scale: 0.9, speed: 1.1 },
+  // Classic abstracts for visual balance.
+  { position: [-2.4, -1.6, -2.2], kind: "torusKnot", color: PALETTE.accent, scale: 0.8, speed: 1.4 },
+  { position: [0.2, -2.1, -1.2], kind: "icosahedron", color: PALETTE.accent, scale: 0.5, speed: 1.6, wireframe: true },
+  { position: [-4.1, -0.6, -3.5], kind: "dodecahedron", color: PALETTE.secondary, scale: 0.7, speed: 1.3 },
+  { position: [1.6, 2.6, -4], kind: "octahedron", color: PALETTE.brand, scale: 1.2, speed: 0.8, wireframe: true },
+  { position: [3.8, -1.8, -4.5], kind: "torus", color: PALETTE.deepRed, scale: 0.9, speed: 1.2 }
 ];
 
 function ParallaxGroup({ children }: { children: React.ReactNode }) {

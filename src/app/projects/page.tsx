@@ -16,11 +16,12 @@ export default function ProjectsPage() {
           Projects
         </p>
         <h1 className="mt-3 text-4xl font-bold tracking-tight md:text-5xl">
-          Things I've built.
+          What I've been building.
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-          A mix of shipped work, open-source tools, and experiments I couldn't stop
-          thinking about until they existed. Filter by tech to narrow things down.
+          Mostly my senior design capstone at NC State, work from my LexisNexis
+          internship, and a few side projects along the way. Filter by stack if you're
+          looking for something specific.
         </p>
       </Reveal>
 

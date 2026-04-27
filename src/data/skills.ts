@@ -5,23 +5,49 @@ export interface SkillGroup {
 
 export const skills: SkillGroup[] = [
   {
-    category: "Languages",
-    items: ["TypeScript", "JavaScript", "Python", "Go", "Rust", "SQL"]
+    category: "Languages & Frameworks",
+    items: [
+      "Java",
+      "Python",
+      "C",
+      "C#",
+      ".NET",
+      "JavaScript",
+      "TypeScript",
+      "AngularJS",
+      "React",
+      "HTML",
+      "CSS",
+      "Tailwind CSS"
+    ]
   },
   {
-    category: "Frameworks",
-    items: ["Next.js", "React", "Node.js", "FastAPI", "Express", "tRPC"]
+    category: "Cloud & DevOps",
+    items: [
+      "AWS (S3, CloudFront, CloudTrail, Secrets Manager)",
+      "Azure DevOps",
+      "Docker",
+      "Docker Compose",
+      "Nginx"
+    ]
   },
   {
-    category: "UI & Motion",
-    items: ["Tailwind CSS", "Framer Motion", "Three.js / R3F", "GSAP", "shadcn/ui"]
+    category: "Databases",
+    items: ["PostgreSQL", "MySQL", "SQL"]
   },
   {
-    category: "Data & Infra",
-    items: ["Postgres", "Redis", "Prisma", "Docker", "AWS", "Vercel"]
-  },
-  {
-    category: "Tooling",
-    items: ["Vite", "Turborepo", "pnpm", "GitHub Actions", "Playwright"]
+    category: "Testing & Collaboration",
+    items: [
+      "JUnit",
+      "TypeMoq",
+      "Jasmine",
+      "Playwright",
+      "Postman",
+      "Swagger",
+      "Git",
+      "Agile / Scrumban",
+      "PR Reviews",
+      "Figma"
+    ]
   }
 ];

@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="border-t border-border/60 bg-background/50 backdrop-blur-sm">
       <div className="container flex flex-col items-center justify-between gap-4 py-8 md:flex-row">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} {siteConfig.author.name}. Built with Next.js, R3F, and too much coffee.
+          © {new Date().getFullYear()} {siteConfig.author.name}. Built with Next.js & R3F, in Raleigh, NC.
         </p>
         <div className="flex items-center gap-2">
           <Link

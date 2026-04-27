@@ -6,26 +6,26 @@ export function About() {
       <div className="grid gap-12 md:grid-cols-[1fr_2fr] md:gap-16">
         <Reveal>
           <p className="font-mono text-sm uppercase tracking-widest text-accent">
-            01 — About
+            About
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">
-            Engineer, designer-adjacent, relentless tinkerer.
+            Full-stack engineer, senior at NC State, Grill Club VP.
           </h2>
         </Reveal>
         <Reveal delay={0.1} className="space-y-5 text-lg text-muted-foreground">
           <p>
-            I'm a software engineer who cares deeply about the seams where systems meet
-            people — the moments where a loading state feels patient, an error is helpful,
-            or a click lands exactly where your hand already was.
+            I'm a CS senior at NC State, graduating May 2026. I was born in South Africa
+            and have ended up in Raleigh, which has turned out to be a pretty good deal.
           </p>
           <p>
-            I've shipped realtime apps, design systems, and developer tooling in
-            production. Lately I'm fascinated by the web as a rendering platform: how far
-            GPU, 3D, and motion can go before they start getting in the user's way.
+            I work across the stack: Spring Boot and React on my capstone, .NET and
+            Angular at my internship last summer. I like problems where the frontend and
+            backend both matter and you have to actually think about what lives where.
           </p>
           <p>
-            Off the keyboard: long trail runs, painfully slow espresso, and building
-            things I don't need out of wood.
+            Outside of school I grill a lot (VP of the club, it's on the resume now),
+            camp when I can, shoot film when the light's right, and spend too much
+            of my free time in the Lands Between.
           </p>
         </Reveal>
       </div>

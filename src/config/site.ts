@@ -1,20 +1,20 @@
 export const siteConfig = {
   name: "Joshua Giles",
-  title: "Joshua Giles — Software Engineer",
+  title: "Joshua Giles, Software Engineer",
   description:
-    "Portfolio of Joshua Giles — software engineer building thoughtful, performant, and delightful web applications.",
+    "Full-stack software engineer. CS senior at NC State (May 2026). Based in Raleigh, NC.",
   url:
     process.env.NEXT_PUBLIC_SITE_URL ??
-    "https://joshua-giles.github.io",
+    "https://joshua-giles.vercel.app",
   ogImage: "/og.png",
   author: {
     name: "Joshua Giles",
-    email: "hello@example.com"
+    email: "joshgiles57@gmail.com"
   },
   social: {
     github: "https://github.com/Joshua-Giles",
-    linkedin: "https://www.linkedin.com/in/joshua-giles",
-    email: "mailto:hello@example.com"
+    linkedin: "https://www.linkedin.com/in/joshuaagiles",
+    email: "mailto:joshgiles57@gmail.com"
   },
   nav: [
     { href: "/", label: "Home" },

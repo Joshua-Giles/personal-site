@@ -13,10 +13,10 @@ export function FeaturedProjects() {
       <Reveal className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="font-mono text-sm uppercase tracking-widest text-accent">
-            03 — Selected Work
+            Selected work
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">
-            Things I've built recently.
+            What I've been working on.
           </h2>
         </div>
         <Button asChild variant="ghost">

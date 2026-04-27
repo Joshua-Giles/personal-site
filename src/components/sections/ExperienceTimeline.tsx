@@ -65,7 +65,7 @@ export function ExperienceTimeline() {
             <span className="absolute left-1.5 top-1.5 h-3 w-3 rounded-full border-2 border-accent bg-background md:left-1/2 md:-translate-x-1/2" />
             <div className={i % 2 === 0 ? "md:pr-12 md:text-right" : "md:order-2 md:pl-12"}>
               <p className="font-mono text-sm text-accent">
-                {entry.start} — {entry.end}
+                {entry.start} → {entry.end}
               </p>
               <h3 className="mt-1 text-xl font-semibold tracking-tight">{entry.role}</h3>
               <p className="text-muted-foreground">

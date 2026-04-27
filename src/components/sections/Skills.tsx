@@ -7,10 +7,10 @@ export function Skills() {
     <section id="skills" className="container py-24 md:py-32">
       <Reveal>
         <p className="font-mono text-sm uppercase tracking-widest text-accent">
-          02 — Toolbelt
+          Toolbelt
         </p>
         <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">
-          The stack I reach for.
+          What I work with.
         </h2>
       </Reveal>
 

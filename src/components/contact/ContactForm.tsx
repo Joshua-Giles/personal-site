@@ -33,7 +33,7 @@ export function ContactForm() {
       if (!res.ok) {
         throw new Error(body?.error ?? "Something went wrong sending your message.");
       }
-      toast.success("Message sent — I'll get back to you soon.");
+      toast.success("Message sent. I'll get back to you soon.");
       reset();
     } catch (err) {
       const message = err instanceof Error ? err.message : "Something went wrong.";
@@ -55,7 +55,7 @@ export function ContactForm() {
         <Label htmlFor="name">Name</Label>
         <Input
           id="name"
-          placeholder="Ada Lovelace"
+          placeholder="Your name"
           aria-invalid={!!errors.name}
           {...register("name")}
         />
