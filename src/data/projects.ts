@@ -2,6 +2,18 @@ import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    slug: "grill-master",
+    title: "Grill Master, The Pocket Sous-Chef",
+    summary:
+      "A pocket grilling companion: multi-step cook plans, parallel timers, and USDA-safe temps for any cut.",
+    description:
+      "An installable PWA I'm building for the way I actually cook on the grill. Pick a cut, thickness, and doneness; the app generates a multi-step cook plan with parallel timers (wake-lock + audio alerts so you don't miss a flip), USDA-safe internal temp references, and a cook journal with photos for the next time you run it back. Local-first storage means it works offline at the patio with no signal. Built with Next.js 14, TypeScript, and Tailwind CSS, designed mobile-first since that's where it lives.",
+    tech: ["Next.js 14", "TypeScript", "Tailwind CSS", "PWA", "Service Workers", "IndexedDB"],
+    image: "/images/thumbnail.webp",
+    featured: true,
+    year: 2026
+  },
+  {
     slug: "juntos-attendance",
     title: "Juntos Attendance Platform",
     summary:
